@@ -6,8 +6,9 @@ This repository assumes a PostgreSQL instance to be up and running. First step i
 
 ## Installation & Testing
 
-Link to downloadpage for PostgreSQL: [PostgreSQL Downloads](https://www.postgresql.org/download/)
-Link to downloadpage for pgAdmin: [pgAdmin Downloads](https://www.pgadmin.org/download/)
+- Link to downloadpage for PostgreSQL: [PostgreSQL Downloads](https://www.postgresql.org/download/)
+- Link to downloadpage for pgAdmin: [pgAdmin Downloads](https://www.pgadmin.org/download/)
+
 To test the database, use the query tool in pgAdmin to run test queries or the PostgreSQL shell. You can also run the [test script](./test_moviedb.sql).
 
 ## Sources
