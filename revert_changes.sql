@@ -32,19 +32,24 @@ DROP ROLE IF EXISTS CONTRIBUTOR;
 DROP ROLE IF EXISTS API_ACCESS;
 DROP USER IF EXISTS user1;
 DROP USER IF EXISTS user2;
+DROP USER IF EXISTS user3;
+DROP USER IF EXISTS user4;
+DROP USER IF EXISTS admin_user;
+DROP USER IF EXISTS contributor_user;
+DROP USER IF EXISTS api_user;
 
--- Revert Users
-DO $$
-BEGIN
-    IF EXISTS (SELECT 1 FROM pg_roles WHERE rolname = 'admin_user') THEN
-        DROP USER admin_user;
-    END IF;
+-- -- Revert Users
+-- DO $$
+-- BEGIN
+--     IF EXISTS (SELECT 1 FROM pg_roles WHERE rolname = 'admin_user') THEN
+--         DROP USER admin_user;
+--     END IF;
 
-    IF EXISTS (SELECT 1 FROM pg_roles WHERE rolname = 'contributor_user') THEN
-        DROP USER contributor_user;
-    END IF;
+--     IF EXISTS (SELECT 1 FROM pg_roles WHERE rolname = 'contributor_user') THEN
+--         DROP USER contributor_user;
+--     END IF;
 
-    IF EXISTS (SELECT 1 FROM pg_roles WHERE rolname = 'api_user') THEN
-        DROP USER api_user;
-    END IF;
-END $$;
+--     IF EXISTS (SELECT 1 FROM pg_roles WHERE rolname = 'api_user') THEN
+--         DROP USER api_user;
+--     END IF;
+-- END $$;

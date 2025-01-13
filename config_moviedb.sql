@@ -109,7 +109,7 @@ CREATE ROLE ADMIN;
 CREATE ROLE CONTRIBUTOR;
 CREATE ROLE API_ACCESS;
 
--- Create users through add_user_with_hashed_password procedure
+-- Create users through add_user_with_hashed_password function
 SELECT add_user_with_hashed_password('admin_user', 'admin_password');
 SELECT add_user_with_hashed_password('contributor_user', 'contributor_password');
 SELECT add_user_with_hashed_password('api_user', 'api_password');
